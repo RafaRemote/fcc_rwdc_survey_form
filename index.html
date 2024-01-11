@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">        
+    <head>
+        <meta charset="utf-8" />
+        <title>Survey Randodvisor</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Randodvisor Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our App !</p>
+        <form id="survey-form" name="survey-form" method="post">
+            <fieldset>
+                <legend>You</legend>        
+                <div>
+                    <label id="name-label" for="name">Name: </label><br />
+                    <input id="name" type="text" placeholder="Enter your name" required />
+                </div>
+                <div>
+                    <label id="email-label" for="email">eMail: </label><br />
+                    <input id="email" type="email" placeholder="Enter your Email" required />
+                </div>
+                <div>
+                    <label id="number-label" for="age">Age: </label><br />
+                    <input id="number" type="number" min="18" max="120" placeholder="Age" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your current status</legend>
+                <select id="dropdown">
+                    <option value="">Select your current status</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="retired">Retired</option>
+                    <option value="unemployed">Unemployed</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend us to a friend ?</legend>
+                <div>
+                    <input type="radio" id="definitively" value="definitively" name="recommend" checked />
+                    <label for="definitively">Defintively</label>
+                </div>
+                <div>
+                    <input type="radio" id="maybe" value="maybe" name="recommend" />
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" id="nsure" value="nsure" name="recommend" />
+                    <label for="notsure">Not Sure</label> 
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend> Your Randodvisor favorite feature </legend>
+                <select id="dropdown">
+                    <option value="">Select one feature</option>
+                    <option value="distances">Distances</option>
+                    <option value="explorer">Explorer</option>
+                    <option value="stats">Statistics</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>What would you like to improve ?</legend>
+                <div>
+                    <input type="checkbox" id="presentation" value="presentation" name="improve"/> 
+                    <label for="presentation">Presentation</label> 
+                </div>
+                <div>
+                    <input type="checkbox" id="readability" value="readability" name="improve"/> 
+                    <label for="readability">Readability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="distances" value="distances" name="improve"/>
+                    <label for="distances"> Distances</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Feel free to leave any comments!</legend>
+                <textarea></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="SUBMIT" />
+        </form>
+    </body>
+</html>
